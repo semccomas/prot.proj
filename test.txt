@@ -1,1 +1,4 @@
 Here is a test file pushing to GIT
+ I will add a line
+and took away a word from the line above 
+cool
