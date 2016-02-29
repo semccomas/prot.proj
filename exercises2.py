@@ -7,7 +7,8 @@ def reverse_list(l):
 
 
 def test_reverse_list():
-    assert reverse_list([1, 2, 3, 4, 5]) == [5, 4, 3, 2, 1]
+    assert reverse_list(['a', 'b', 4, 2, 'hello']) == ['hello', 2, 4, 'b', 'a']
+    assert not reverse_list ([1, 2, 3, 4, 5]) == ([1, 2, 3, 4, 5])
 
 
 # ------------------------------------------------------------------------------
