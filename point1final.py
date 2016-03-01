@@ -1,16 +1,17 @@
-#point 1 in project--- date modified: 2016-02-26 
+#point 1 in project--- date modified: 2016-03-01 
 #Sarah McComas
 
 import sys                          #to use for sys.argv[]
 script_name= sys.argv[0]
 input_file = sys.argv[1]            # so that you can only write 'python point1new.py input_file_name'
-#output_file= sys.argv[2]
-f=open(input_file)                  #need to open the input file
-aa=f.read().splitlines()            #splitting to read line by line, will need in aa
+output_file= sys.argv[2]
+i=open(input_file)                  #need to open the input file
+aa=i.read().splitlines()            #splitting to read line by line, will need in aa
+o= open(output_file, 'w')
 
 header= "######'A':1, 'C':2, 'D':3, 'E':4, 'F':5, 'G':6, 'H':7, 'I':8, 'K':9, 'L':10, 'M':11,\
 'N':12, 'P':13, 'Q':14, 'R':15, 'S':16, 'T':17, 'Y':18, 'V':19, 'W':20"
-print header
+
 
 name= []                    #should print the first name as it looks like in fasta
 seq_list= []                   #will hold the list of the amino acids as a string
@@ -46,10 +47,11 @@ for struct_string in struct_list:
 
 zippy= zip(target, amino_numbs)
 for a, b in zippy:
-	pass
-	print a , b , ':' , 1            
+	o.write(str(a)+ ' ' + str(b) + ':1\n')
 
-#print struct_list
+o.close           
+
+
 
 	#we assign a 1 because we chose not to print out a 0 for each amino acid that is not there. We will need
 	#to do this in PSIBLAST so check out 'point1new.py' where I left the code intact considering what you would 
