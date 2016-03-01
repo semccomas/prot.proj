@@ -49,6 +49,7 @@ for a, b in zippy:
 	pass
 	print a , b , ':' , 1            
 
+#print struct_list
 
 	#we assign a 1 because we chose not to print out a 0 for each amino acid that is not there. We will need
 	#to do this in PSIBLAST so check out 'point1new.py' where I left the code intact considering what you would 
