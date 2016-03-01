@@ -60,7 +60,7 @@ for line2 in aread:                   #looking at the cd hit results line by lin
 
 
 
-		if accession_names[0]=='0' and counter >= 50:              #accession name =0 are all the lines that come directly at the start of the cluster
+		if accession_names[0]=='0' and counter >= 53:              #accession name =0 are all the lines that come directly at the start of the cluster
 			file_counter= file_counter + 1 
 			b= open('./output/point2_output_' + str(file_counter) + '.txt' , 'w')
 			b.write(dic_key + '\n' + "%s\n%s\n" %tuples)                           #when the counter is over 50, open a new file and write to it
