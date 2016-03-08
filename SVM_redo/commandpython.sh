@@ -1,0 +1,1 @@
+./svm_light2/svm_learn ./svm_input2/SVM_set_2.train.txt model_train_set2
