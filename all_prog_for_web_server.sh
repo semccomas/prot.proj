@@ -14,7 +14,7 @@ for i in $input_dir/myseq_FASTA_15.fasta; do          #like f below in step 2, y
 	base= `basename $i`
 	echo $base
 #	blastpgp -i $i -j 3 -d $database_file -i $i -o $blast_dir/$base.blastpgp -Q $blast_dir/$base.psi
-#done
+done
 
 #step 1- run blast on file. This is just using the default settings from sarahblast.sh so i think it'll be the same
 
@@ -42,14 +42,4 @@ done
 ###STEP 4- MAKING A USER FRIENDLY MODEL ##############
 for h in $output_dir/predicted_results_TEST_SERVER.txt; do
 	python $script_dir/user_friendly_fig.py $h $i    # $i = ./FASTA_files/myseq_FASTA_15.txt here
-
-
-
-
-
-
-
-
-
-
-
+done
