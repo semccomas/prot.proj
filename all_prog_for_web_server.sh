@@ -5,7 +5,7 @@ script_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj   #here we are us
 input_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj  #here we will make wherever you're getting your sequence from
 blast_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj/webserver #here will be the output for where you want your blast files to go. 
 output_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj/webserver
-svm_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj/SVM/svm_light
+svm_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj/SVM/svm_light/
 model_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj/SVM_BLAST/testingBLAST #in here we have the 3rd
 
 ##### STEP 1- RUN BLAST ##### 
