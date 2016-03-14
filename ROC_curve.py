@@ -1,9 +1,26 @@
 from sklearn.metrics import roc_curve, auc
 import matplotlib.pyplot as plt
 import random
+import numpy as np 
 
-actual = [1,1,1,0,0,0]                       #so I guess this will be like the OG 
-predictions = [0.9,0.1,0.9,0.1,0.1,0.1]             # and SVM for us?
+file= open('./SVM/models_terminal_outputs_svm/ROC_single_seq_default_SORTED.txt', 'r').read().splitlines()
+
+ilist= []
+
+for i in file:
+	i= i.split('	')
+	ilist.append(i)
+
+
+myarray= np.asarray(ilist)
+myarray= myarray.astype(np.float)
+	
+actual= myarray [ : , 0]
+predictions= myarray [ : , 1 ]
+print actual
+print predictions
+#print myarray
+
 
 false_positive_rate, true_positive_rate, thresholds = roc_curve(actual, predictions)
 roc_auc = auc(false_positive_rate, true_positive_rate)
@@ -20,4 +37,3 @@ plt.ylim([-0.1,1.2])
 plt.ylabel('True Positive Rate')
 plt.xlabel('False Positive Rate')
 plt.show()
-

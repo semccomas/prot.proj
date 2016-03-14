@@ -3,7 +3,7 @@
 import operator as op
 
 
-filenames_SVM = ['./SVM/models_terminal_outputs_svm/prediction_results2345.txt', './SVM/models_terminal_outputs_svm/prediction_results2346.txt', './SVM/models_terminal_outputs_svm/prediction_results2356.txt', './SVM/models_terminal_outputs_svm/prediction_results2456.txt', './SVM/models_terminal_outputs_svm/prediction_results3456.txt']
+filenames_SVM = ['./SVM/models_terminal_outputs_svm/prediction_results2345_NEW.txt', './SVM/models_terminal_outputs_svm/prediction_results2346_NEW.txt', './SVM/models_terminal_outputs_svm/prediction_results2356.txt', './SVM/models_terminal_outputs_svm/prediction_results2456.txt', './SVM/models_terminal_outputs_svm/prediction_results3456.txt']
 with open('./SVM/models_terminal_outputs_svm/ALL_predicted_results.txt', 'w') as outfile_SVM:
     for fname in filenames_SVM:
         with open(fname) as infile:
@@ -23,6 +23,11 @@ with open('./SVM/models_terminal_outputs_svm/ALL_actual_results.txt', 'w') as ou
 outfile_actual.close
 
 
+
+
+
+
+'''
 sortedfile=open('./SVM/models_terminal_outputs_svm/ALL_actual_results.txt', 'r')
 sorted_SVM=open('./SVM/models_terminal_outputs_svm/ALL_predicted_results.txt', 'r')
 
@@ -54,7 +59,7 @@ newfile.close
 #	f.write(aa + 'HELLO HELLO HELLO' + vv + 'VVVVV' +  " " + bb + " " + cc + " " + dd + " " + ee + " ")
 
 #f.close
-'''
+
 lister2=[]
 for (aa, vv, bb, ww, cc, xx, dd, yy, ee, zz) in zip(a, v, b, w, c, x, d, y, e, z):
 	vv= str(vv).split()
