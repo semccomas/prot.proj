@@ -1,0 +1,3 @@
+Reading model...OK. (37385 support vectors read)
+Classifying test examples..done
+Runtime (without IO) in cpu-seconds: 0.00
