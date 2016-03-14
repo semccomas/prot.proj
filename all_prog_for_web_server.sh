@@ -2,7 +2,7 @@
 
 
 script_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj   #here we are using psi_parse_with_topology , 
-input_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj  #here we will make wherever you're getting your sequence from
+input_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj/webserver  #here we will make wherever you're getting your sequence from
 blast_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj/webserver #here will be the output for where you want your blast files to go. 
 output_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj/webserver
 svm_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj/SVM/svm_light/
@@ -10,8 +10,9 @@ model_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj/SVM_BLAST/testingB
 
 ##### STEP 1- RUN BLAST ##### 
 
-#for i in $input_dir; do
-#	base= `basename $i`
+for i in $input_dir/myseq_FASTA_15.fasta; do          #like f below in step 2, you have to change this when it's actually time to run
+	base= `basename $i`
+	echo $base
 #	blastpgp -i $i -j 3 -d $database_file -i $i -o $blast_dir/$base.blastpgp -Q $blast_dir/$base.psi
 #done
 
@@ -20,7 +21,7 @@ model_dir=/home/sarah/Desktop/prot.proj.scilifecomp/prot.proj/SVM_BLAST/testingB
 
 
 #######STEP 2- MATRIX PARSING####### 
-for f in $input_dir/myseq_FASTA_15_TESTforserver.txt; do     #this will become blast_dir/$base.psi. for now we pretend this 15 file is our blast output (is just a copy from the psi file)
+for f in $script_dir/myseq_FASTA_15_TESTforserver.txt; do     #this will become blast_dir/$base.psi. for now we pretend this 15 file is our blast output (is just a copy from the psi file)
 python $script_dir/psi_parse_with_topology_forserver.py $f $blast_dir/matrix_SERVERTEST.txt
 	done
 #so this step parses the psiblast output. The psiparse file is the same exact file as the original psi_parse but does NOT include stuctures and target values.
@@ -38,7 +39,9 @@ done
 
 
 ############# I don't think you can calculate the MCC because you don't have target values as before #########
-
+###STEP 4- MAKING A USER FRIENDLY MODEL ##############
+for h in $output_dir/predicted_results_TEST_SERVER.txt; do
+	python $script_dir/user_friendly_fig.py $h $i    # $i = ./FASTA_files/myseq_FASTA_15.txt here
 
 
 
