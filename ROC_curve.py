@@ -3,9 +3,11 @@ import matplotlib.pyplot as plt
 import random
 import numpy as np 
 
+#file= open('./SVM_BLAST/testingBLAST/ROC_curve_kernel0_SORTED.txt', 'r').read().splitlines()
 file= open('./SVM/models_terminal_outputs_svm/ROC_single_seq_default_SORTED.txt', 'r').read().splitlines()
 
-ilist= []
+
+ilist= [ ]
 
 for i in file:
 	i= i.split('	')
@@ -25,7 +27,7 @@ print predictions
 false_positive_rate, true_positive_rate, thresholds = roc_curve(actual, predictions)
 roc_auc = auc(false_positive_rate, true_positive_rate)
 
-print true_positive_rate
+#print true_positive_rate
 
 plt.title('Receiver Operating Characteristic')
 plt.plot(false_positive_rate, true_positive_rate, 'b',
