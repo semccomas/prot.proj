@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 MAR 2016 15:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 MAR 2016 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -56,9 +56,113 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf.sty
-Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
 
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen105
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(./Untitled.aux
+
+LaTeX Warning: Label `figure1' multiply defined.
+
+)
+\openout1 = `Untitled.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+ (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count100
+\scratchdimen=\dimen114
+\scratchbox=\box28
+\nofMPsegments=\count101
+\nofMParguments=\count102
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count103
+\MPscratchDim=\dimen115
+\MPnumerator=\count104
+\makeMPintoPDFobject=\count105
+\everyMPtoPDFconversion=\toks21
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -76,29 +180,11 @@ Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
@@ -107,86 +193,65 @@ G,.JBIG2,.JB2,.eps]
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-)))
-(./Untitled.aux)
-\openout1 = `Untitled.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count88
-\scratchdimen=\dimen105
-\scratchbox=\box26
-\nofMPsegments=\count89
-\nofMParguments=\count90
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count91
-\MPscratchDim=\dimen106
-\MPnumerator=\count92
-\makeMPintoPDFobject=\count93
-\everyMPtoPDFconversion=\toks16
-)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
- [1
+))
+[1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2
 
-] [3]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 45.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 45.
- <bar_graph_fig.pdf, id=18, 578.16pt x 433.62pt>
-File: bar_graph_fig.pdf Graphic file (type pdf)
+] [3] <psi_output.png, id=18, 569.12625pt x 114.4275pt>
+File: psi_output.png Graphic file (type png)
+ <use psi_output.png>
+Package pdftex.def Info: psi_output.png used on input line 51.
+(pdftex.def)             Requested size: 284.52756pt x 57.20836pt.
 
-<use bar_graph_fig.pdf>
-Package pdftex.def Info: bar_graph_fig.pdf used on input line 54.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+[4 <./psi_output.png>] <bar_graph_fig2.png, id=25, 578.16pt x 433.62pt>
+File: bar_graph_fig2.png Graphic file (type png)
 
-Overfull \hbox (364.89958pt too wide) in paragraph at lines 54--55
-\OT1/cmr/m/n/10 found in Fig-ure 2 and Ta-ble 1. [] 
- []
+<use bar_graph_fig2.png>
+Package pdftex.def Info: bar_graph_fig2.png used on input line 73.
+(pdftex.def)             Requested size: 284.52756pt x 213.39536pt.
+ <ROC_plot.png, id=27, 578.16pt x 433.62pt>
+File: ROC_plot.png Graphic file (type png)
 
-[4] [5 <./bar_graph_fig.pdf>] (./Untitled.aux) ) 
+<use ROC_plot.png>
+Package pdftex.def Info: ROC_plot.png used on input line 81.
+(pdftex.def)             Requested size: 284.52756pt x 213.39536pt.
+ [5] [6 <./bar_graph_fig2.png> <./ROC_plot.png>]
+<table_of_avg_vs_set1.png, id=37, 618.31pt x 135.50626pt>
+File: table_of_avg_vs_set1.png Graphic file (type png)
+
+<use table_of_avg_vs_set1.png>
+Package pdftex.def Info: table_of_avg_vs_set1.png used on input line 90.
+(pdftex.def)             Requested size: 284.52756pt x 62.35843pt.
+ [7 <./table_of_avg_vs_set1.png>] [8]
+(./Untitled.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1502 strings out of 493089
- 21761 string characters out of 6134842
- 82210 words of memory out of 5000000
- 4991 multiletter control sequences out of 15000+600000
- 8233 words of font info for 29 fonts, out of 8000000 for 9000
+ 2114 strings out of 493089
+ 28706 string characters out of 6134842
+ 96598 words of memory out of 5000000
+ 5585 multiletter control sequences out of 15000+600000
+ 9361 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,23p,1454b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmti10.pfb>
-Output written on Untitled.pdf (5 pages, 97880 bytes).
+ 38i,6n,23p,1454b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Untitled.pdf (8 pages, 219505 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 78 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
