@@ -1,4 +1,10 @@
 \documentclass{article}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+
+\graphicspath{ {/Users/semccomas/Desktop/prot.proj/} }
+
 \begin{document}
 
 
@@ -27,13 +33,27 @@ Another successful feature of modern computational predictors is the presence of
 
 \section{Methods}
 
-I extracted features from a database of solely alpha membrane proteins with known topologies to train an SVM in supervised learning. This consisted of about 300 sequences and each entry consisted of the accession number of the protein, the amino acid sequence, and the corresponding position with regards to the membrane (I for inside, O for outside, and M for membrane). In this case, all positions with an 'M' would become a positive example, while 'I' or 'O' would be a negative one. I also assigned each amino acid letter a corresponding number so that it was readable by the SVM. This lead to a standard SVM format, as seen and described in Figure 1.
+I extracted features from a database of solely alpha membrane proteins with known topologies to train an SVM in supervised learning. This consisted of about 300 sequences and each entry consisted of the accession number of the protein, the amino acid sequence, and the corresponding position with regards to the membrane (I for inside, O for outside, and M for membrane). In this case, all positions with an 'M' would become a positive example, while 'I' or 'O' would be a negative one. I also assigned each amino acid letter a corresponding number so that it was readable by the SVM. This lead to a standard SVM format, as seen and described in Figure 1. 
 
 
+To increase accuracy in the SVM, I created 6 sets of about 50 sequences each from my database in order to perform cross validation. This is a very important step because otherwise, when the SVM is optimizing the data to try to separate the positive and negative classifications, it will overfit and become too specific to the training example it has been given. In creating a variety of sets in which the SVM can optimize its models, it becomes easier to achieve a good balance between overfitting and achieving a high accuracy of prediction. For this reason, I trained and optimized my SVM on 5 of the 6 datasets to leave one dataset, known as the validation dataset, in which I will test on at the very end of the optimization to ensure that I haven't overfit my predictor. 
+
+Because alpha membrane proteins are important, it is not uncommon to see conservation in the protein or sequence and therefore homologs are more than likely present. If they are present and happen to be separated into different cross validation sets, this can report false accuracy when testing the model because the homologous sequences are too similar and it would be as if I had trained the SVM on the same data I tested it. To avoid this, I input my entire database into CD-HIT (10) which reported back the sequences in groups of homologs. My dataset did not have many but did have some so from this, I made my cross validation sets to ensure that if there were homologs between sequences, that they would end up in the same cross validation set. 
+
+The SVM was trained in two separate manners. Firstly, the single sequence information was used. This was not expected to create a high quality predictor but it is important to compare to the MSA profiles to this. ******** (GIVE MORE INFO) ************* The MSA profile was created from running PSI-BLAST (5) locally. This search took several days to complete, but once finished, a position specific scoring matrix, or PSSM, was generated for every amino acid in the sequence. This PSSM correlated to each amino acid's predicted presence in evolution at that certain position. This is the main difference between the MSA data for the SVM and the single sequence information; the single sequence information merely contains a 1 or 0 depending on the amino acid exists at that position in the sequence or not, respectively. The PSSM is therefore much more thorough, but must be transformed first so that the SVM can read it as a feature value (illustrated in Figure 1) and must therefore be between 0 and 1. Before the BLAST output could be read by the SVM, it was first transformed using the sigmoidal function. ************ ILLUSTRATE SIGMOID ***************  
+
+There is no true limit on how much one can train an SVM, and here my only real limitation was time. Particularly for the PSI-BLAST output, training the SVM on all of my data would usually take about 8 to 12 hours. I began first by training the SVM on the single sequence data but did not further pursue any optimization. From SVM\textsuperscript{light} (6), there are many options on which one can optimize beyond the default parameters, which is important for obtaining the best possible results in the predictor.  After running default settings for the SVM on my MSA profile, I tried with 3 kernels, which are different algorithms for finding the right means of separating data in an \textit{n}-dimensional space. I tried these kernels with several parameters as well, which can customize the kernel. This can be, for example, defining a trade-off between misclassification and the simplicity of the separation (the \textit{c} parameter) or how constrained the model should be (the \textit{gamma} parameter) (11). 
+
+ACC and MCC here?? 
+
+Figure 1- each line began with a target value (a positive or negative number depending on structural position). Show maybe the PSIBLAST output. explain what the PSSM output looks like, the amino acid number, and what a single sequence output would look like instead. 
 
 
+\section{Results}
 
-Figure 1- each line began with a target value (a positive or negative number depending on structural position). Show maybe the PSIBLAST output. explain what the PSSM output looks like, the amino acid number, and what a single sequence output would look like instead.
+Once optimized, the predictor was capable of predicting protein topology with approximately 85\% accuracy. These results in comparing the final models can be found in Figure 2 and Table 1. \includegraphics{bar_graph_fig}
+
+
 
 
 
@@ -45,15 +65,25 @@ Figure 1- each line began with a target value (a positive or negative number dep
 
 
 \section{References}
+
+\end{document}
+
+
+I took this at the end because it was making lots of weird errors when i copy pasted a website
+
+
 1-http://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-7-50    (alpha proteins info)
 2- http://pubs.acs.org/doi/abs/10.1021/bi00699a002    (chou fasman)
 3- Kabsch W, Sander C (1983). "How good are predictions of protein secondary structure?". FEBS Lett 155 (2): 179?82. doi:10.1016/0014-5793(82)80597-8. PMID 6852232.  
 4- TOPCONS paper
 5-  (PSIBLAST) 
-6- SVM7- PSIPRED
+6- SVM
+7- PSIPRED
 7 - TMHMM
 8- PSIPRED
 
 9- CASP
 
-\end{document}
+10- CD HIT
+11- \http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html
+
